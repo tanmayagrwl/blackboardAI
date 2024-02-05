@@ -1,5 +1,5 @@
 import { Button } from './ui/button';
-
+import { Link } from 'react-router-dom';
 function Login() {
   return (
     <div className="flex w-full h-screen">
@@ -21,10 +21,12 @@ function Login() {
               Sign up to get started
             </p>
           </div>
-          <Button variant="outline" className="space-x-2">
-            <img src="/assets/google.svg" alt="" className="size-4" />
-            <span>Continue with Google</span>
-          </Button>
+          <Link to="/upload">
+            <Button variant="outline" className="space-x-2 w-[100%]">
+              <img src="/assets/google.svg" alt="" className="size-4" />
+              <span>Continue with Google</span>
+            </Button>
+          </Link>
           <p className="px-8 text-center text-sm text-muted-foreground">
             By clicking continue, you agree to our{' '}
             <a
