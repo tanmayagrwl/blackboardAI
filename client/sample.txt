@@ -1,0 +1,24 @@
+import React from 'react';
+import Upload from './upload';
+
+function Dashboard() {
+  return (
+    <div className="w-full h-screen bg-[#F1F5F9] flex flex-col ">
+      <div className="flex items-center justify-end pr-10 py-8 gap-3 h-[5vh]">
+        <img
+          src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg"
+          alt=""
+          className="h-8"
+        />
+        <div className="text-md">User Name</div>
+      </div>
+      <div className="flex w-full h-screen justify-end overflow-hidden bg-red-200 items-center px-10">
+        <div className="h-[85vh] w-[80vw] bg-green-300  rounded-3xl">
+          <Upload />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Dashboard;
