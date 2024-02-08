@@ -1,22 +1,18 @@
 import Login from './components/login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Upload from './components/upload';
+import Dashboard from './components/dashboard';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          {/* @ts-ignore */}
-          <Route exact path="/" element={<Login />} />
-        </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/upload" element={<Upload />} />
+        <Route path="/dashboard" element={<Dashboard />} />
 
-        <Routes>
-          {/* @ts-ignore */}
-          <Route exact path="/upload" element={<Upload />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

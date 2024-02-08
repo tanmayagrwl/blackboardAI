@@ -3,6 +3,17 @@
 @tailwind components;
 @tailwind utilities;
  
+  @keyframes moveBackAndForth {
+    0%,100% {
+      transform: translate(-20px, 0);
+    }
+    50% {
+      transform: translate(20px,0); 
+    }
+   
+  }
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

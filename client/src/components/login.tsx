@@ -1,16 +1,19 @@
+import { BackgroundBeams } from './ui/background-beams';
 import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
 function Login() {
   return (
     <div className="flex w-full h-screen">
-      <div className="w-[60%] h-screen bg-[#F1F5F9] relative lg:block hidden">
+      <div className="w-[60%] h-screen bg-[#f9fafa] relative lg:flex hidden   items-center justify-center">
+        <BackgroundBeams />
+
         <img
-          src="/assets/illustrations/work.svg"
+          src="https://illustrations.popsy.co/amber/student-graduation.svg"
           alt=""
-          className="absolute left-0 h-full opacity-75"
+          className="opacity-95 w-5/6 transition-transform transform duration-100 hover:scale-105 motion-safe:animate-[moveBackAndForth_15s_ease-in-out_infinite]"
         />
       </div>
-      <div className="lg:w-[40%] w-full h-screen bg-white flex items-center justify-center">
+      <div className="lg:w-[40%] w-full h-screen  flex items-center justify-center">
         <div className="mx-auto flex w-full flex-col justify-center space-y-6 max-w-md p-4">
           <div className="flex flex-col space-y-2 text-center">
             {/* <Icons.logo className="mx-auto h-6 w-6" /> */}
