@@ -1,4 +1,3 @@
-import React from 'react';
 import { Boxes } from './ui/background-boxes';
 import { Link } from 'react-router-dom';
 
@@ -11,21 +10,21 @@ function Landing() {
             <img
               src="/public/assets/illustrations/book.svg"
               alt=""
-              className="h-48 left-0 opacity-95 w-5/6 transition-transform transform duration-100 hover:scale-105 motion-safe:animate-[moveBackAndForth_15s_ease-in-out_infinite] "
+              className="h-48 left-0  w-5/6 transition-transform transform duration-100 hover:scale-105 motion-safe:animate-[moveBackAndForth_15s_ease-in-out_infinite] "
             />
           </div>
           <div className="absolute right-10 top-64 h-full hidden sm:hidden lg:block">
             <img
               src="/public/assets/illustrations/laptop.svg"
               alt=""
-              className="h-48 left-0 opacity-95 w-5/6 transition-transform transform duration-100 hover:scale-105 motion-safe:animate-[moveBackAndForth_15s_ease-in-out_infinite] "
+              className="h-48 left-0  w-5/6 transition-transform transform duration-100 hover:scale-105 motion-safe:animate-[moveBackAndForth_15s_ease-in-out_infinite] "
             />
           </div>
           <div className="absolute -bottom-96 left-48  h-full hidden sm:hidden lg:block">
             <img
               src="/public/assets/illustrations/tickets.svg"
               alt=""
-              className="h-48 left-0 opacity-95 w-5/6 transition-transform transform duration-100 hover:scale-105 motion-safe:animate-[moveBackAndForth_15s_ease-in-out_infinite] "
+              className="h-48 left-0 w-5/6 transition-transform transform duration-100 hover:scale-105 motion-safe:animate-[moveBackAndForth_15s_ease-in-out_infinite]  "
             />
           </div>
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-8xl text-sky-900">
@@ -45,6 +44,7 @@ function Landing() {
         </div>
         <Boxes className="opacity-20" />
       </section>
+      <hr />
       <section className="min-h-screen">Bakki here</section>
     </>
   );
